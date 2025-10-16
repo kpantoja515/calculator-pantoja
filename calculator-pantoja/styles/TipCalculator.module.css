@@ -1,0 +1,195 @@
+.container {
+  min-height: 100vh;
+  background-color: #c5e4e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5em;
+  color: #3d6666;
+  font-weight: bold;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 56rem;
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  display: block;
+  color: #5e7a7d;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ebbbd;
+  font-size: 1.25rem;
+}
+
+.input {
+  width: 100%;
+  background-color: #f3f9fa;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00474b;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.input:focus {
+  outline: 2px solid #26c2ae;
+  outline-offset: 0;
+}
+
+/* === TIP GRID FIXED === */
+.tipGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.tipButton,
+.customInput {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tipButton {
+  background-color: #00474b;
+  color: white;
+}
+
+.tipButton:hover,
+.tipButton.active {
+  background-color: #26c2ae;
+  color: #00474b;
+}
+
+.customInput {
+  text-align: center;
+  color: #00474b;
+  background-color: #f3f9fa;
+}
+
+.customInput:focus {
+  outline: 2px solid #26c2ae;
+  outline-offset: 0;
+}
+
+.customInput::placeholder {
+  color: #547878;
+}
+
+/* === RESULTS === */
+.resultSection {
+  background-color: #00474b;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resultRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resultLabel {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.resultSubLabel {
+  color: #7f9d9f;
+  font-size: 0.75rem;
+}
+
+.amount {
+  color: #26c2ae;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.resetButton {
+  width: 100%;
+  background-color: #26c2ae;
+  color: #00474b;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2rem;
+  transition: background-color 0.2s;
+}
+
+.resetButton:hover {
+  background-color: #9fe8df;
+}
